@@ -11,6 +11,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ProgressBar;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
@@ -21,18 +22,20 @@ import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 
-public abstract class Registration2 extends AppCompatActivity implements View.OnClickListener {
+public class Registration2 extends AppCompatActivity implements View.OnClickListener {
 
     private EditText emailTextView, passwordTextView;
     private Button Btn;
     private ProgressBar progressbar;
     private FirebaseAuth mAuth;
+    TextView mCreateText;
 
     @Override
     protected void onCreate(Bundle savedInstanceState)
     {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_registration2);
+        getSupportActionBar().hide();
+       setContentView(R.layout.activity_registration2);
 
         // taking FirebaseAuth instance
         mAuth = FirebaseAuth.getInstance();
@@ -44,7 +47,7 @@ public abstract class Registration2 extends AppCompatActivity implements View.On
         progressbar = findViewById(R.id.progressBar);
 
         // Set on Click Listener on Registration button
-        Btn.setOnClickListener(new OnClickListener() {
+        Btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v)
             {
@@ -99,7 +102,7 @@ public abstract class Registration2 extends AppCompatActivity implements View.On
                             // if the user created intent to login activity
                             Intent intent
                                     = new Intent(Registration2.this,
-                                    MainActivity.class);
+                                    Login2.class);
                             startActivity(intent);
                         } else {
 
@@ -116,5 +119,22 @@ public abstract class Registration2 extends AppCompatActivity implements View.On
                         }
                     }
                 });
+    }
+
+
+
+ 
+    @Override
+    public void onClick(View v) {
+       // startActivity(new Intent(getApplicationContext(), Login2.class));
+
+    }
+
+    public void Login(View view) {
+        //startActivity(new Intent(getApplicationContext(), Login2.class));
+        Intent intent
+                = new Intent(Registration2.this,
+                Login2.class);
+        startActivity(intent);
     }
 }

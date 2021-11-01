@@ -4,50 +4,53 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/common_full_open_on_phone"
+    android:backgroundTint="@color/white"
     android:orientation="vertical"
-    android:background="@drawable/background"
     tools:context=".Registration2">
 
     <RelativeLayout
-        android:layout_width="match_parent"
+        android:layout_width="411dp"
         android:layout_height="wrap_content"
-        android:layout_marginRight="20dp"
-        android:layout_marginLeft="20dp">
-
-        <ImageView
-            android:layout_width="100dp"
-            android:layout_height="90dp"
-            android:src="@drawable/iconname">
-        </ImageView>
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp">
 
         <TextView
             android:id="@+id/textView1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="10dp"
-            android:layout_marginTop="7dp"
-            android:layout_marginRight="10dp"
-            android:layout_marginBottom="3dp"
-            android:textColor="#FFFFFF"
-            android:textStyle="bold|italic"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginRight="0dp"
+            android:layout_marginBottom="0dp"
+            android:background="@color/purple_700"
             android:gravity="center_horizontal"
             android:text="WELCOME"
-            android:textSize="35sp" />
+            android:textColor="@color/black"
+            android:textSize="35sp"
+            android:textStyle="bold|italic" />
 
     </RelativeLayout>
 
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@color/purple_700"
+        android:src="@drawable/iconname"></ImageView>
+
     <TextView
         android:id="@+id/textView2"
-        android:layout_width="match_parent"
+        android:layout_width="399dp"
         android:layout_height="wrap_content"
         android:layout_marginLeft="10dp"
         android:layout_marginRight="10dp"
-        android:layout_marginBottom="3dp"
-        android:textColor="#FFFFFF"
-        android:textStyle="bold"
+        android:layout_marginBottom="10dp"
+        android:background="@color/purple_700"
         android:gravity="center_horizontal"
         android:text="Register Here"
-        android:textSize="20sp" />
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold" />
 
     <EditText
         android:id="@+id/fullName"
@@ -117,7 +120,11 @@
         android:background="@color/purple_200"
         android:text="Register"
         android:textColor="@color/black"
-        android:textSize="18sp" />
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent" />
 
 
     <Button
@@ -128,10 +135,15 @@
         android:layout_marginTop="15dp"
         android:layout_marginRight="20dp"
         android:layout_marginBottom="3dp"
-        android:textColor="@color/purple_200"
         android:gravity="center_horizontal"
+        android:onClick="Login"
         android:text=" Login Here"
-        android:textSize="18sp" />
+        android:textColor="@color/purple_200"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <ProgressBar
         android:id="@+id/progressBar"

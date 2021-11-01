@@ -1,33 +1,33 @@
 {
   "project_info": {
-    "project_number": "273147251628",
-    "project_id": "is-2-a7afa",
-    "storage_bucket": "is-2-a7afa.appspot.com"
+    "project_number": "538226383880",
+    "project_id": "safety-app-564ff",
+    "storage_bucket": "safety-app-564ff.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:273147251628:android:dc62ad5da4602450208809",
+        "mobilesdk_app_id": "1:538226383880:android:ec33e267a639e652f1c5bd",
         "android_client_info": {
-          "package_name": "com.example.safetymap"
+          "package_name": "com.example.safetyapp"
         }
       },
       "oauth_client": [
         {
-          "client_id": "273147251628-jfbijum5u643ut82cau0s53c1t0ham28.apps.googleusercontent.com",
+          "client_id": "538226383880-p322fhd9hrjugnm607f76egdebnu1huv.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyD_vptw-k1H0cR1vVdkpCEKfSXUlW1L1NM"
+          "current_key": "AIzaSyBgdRiYT6y32oMQ6wZGwxnAYR-w-_8NMsQ"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "273147251628-jfbijum5u643ut82cau0s53c1t0ham28.apps.googleusercontent.com",
+              "client_id": "538226383880-p322fhd9hrjugnm607f76egdebnu1huv.apps.googleusercontent.com",
               "client_type": 3
             }
           ]

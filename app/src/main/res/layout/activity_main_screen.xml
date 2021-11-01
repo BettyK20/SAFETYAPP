@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/common_full_open_on_phone"
+    tools:context=".MainScreen">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp">
+
+            <TextView
+                android:layout_width="800dp"
+                android:layout_height="90dp"
+                android:onClick="MyProfile"
+                android:src="@drawable/iconname"></TextView>
+        </RelativeLayout>
+
+        <GridLayout
+            android:layout_marginTop="10dp"
+            android:columnCount="2"
+            android:rowCount="3"
+            android:columnOrderPreserved="false"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                app:cardElevation="6dp"
+                app:cardCornerRadius="12dp"
+                android:layout_margin="12dp"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <ImageView
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:src="@drawable/myprofile"></ImageView>
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        android:text="My Profile"
+                        android:textColor="@color/black"
+                        android:textSize="18sp"></Button>
+
+
+                    <EditText
+                        android:id="@+id/startingPoint"
+                        android:layout_width="match_parent"
+                        android:layout_height="37dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="100dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginBottom="3dp"
+                        android:background="@android:color/background_light"
+                        android:ems="10"
+                        android:gravity="center_horizontal"
+                        android:hint="Starting Point"
+                        android:inputType="" />
+
+                    <EditText
+                        android:id="@+id/Destination"
+                        android:layout_width="match_parent"
+                        android:layout_height="37dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="25dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginBottom="3dp"
+                        android:background="@android:color/background_light"
+                        android:ems="10"
+                        android:gravity="center_horizontal"
+                        android:hint="Desination"
+                        android:inputType="" />
+
+
+                    <Button
+                        android:id="@+id/checksafetyscorecardbtn"
+                        android:layout_width="281dp"
+                        android:layout_height="44dp"
+                        android:layout_marginLeft="130dp"
+                        android:layout_marginTop="0dp"
+                        android:layout_marginRight="130dp"
+                        android:layout_marginBottom="3dp"
+                        android:background="@color/colorprimarydark"
+                        android:text="Check Safety Score Card"
+                        android:textColor="@color/black"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/createText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginBottom="3dp"
+                        android:gravity="center_horizontal"
+                        android:text="Check Safety Score Card"
+                        android:textColor="@color/colorprimarydark"
+                        android:textSize="18sp" />
+
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+        <ProgressBar
+            android:id="@+id/progressBar2"
+            style="?android:attr/progressBarStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="invisible" />
+
+    </LinearLayout>
+</ScrollView>
