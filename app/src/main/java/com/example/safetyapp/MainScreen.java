@@ -33,15 +33,20 @@ public class MainScreen extends AppCompatActivity {
 
         progressBar = findViewById(R.id.progressBar);
 
-        mCheckSafetyScoreCard.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startActivity(new Intent(getApplicationContext(), MapsActivity.class));
-            }
-        }
-        );
+//        mCheckSafetyScoreCard.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                startActivity(new Intent(getApplicationContext(), MapsActivity.class));
+//            }
+//        }
+//        );
     }
 
     public void MyProfile(View view) {
+    }
+
+    public void CheckSafetyScoreCard(View view) {
+        Intent i = new Intent(getApplicationContext(), MapsActivity.class);
+        startActivity(i);
     }
 }

@@ -63,10 +63,10 @@ public class MainActivity extends AppCompatActivity {
         Intent i = new Intent(getApplicationContext(), Login2.class);
         startActivity(i);
     }
-    public void CheckSafetyScoreCard(View v){
-        Intent i = new Intent(getApplicationContext(), MapsActivity.class);
-        startActivity(i);
-    }
+//    public void CheckSafetyScoreCard(View v){
+//        Intent i = new Intent(getApplicationContext(), MapsActivity.class);
+//        startActivity(i);
+//    }
 
 
 //    @Override

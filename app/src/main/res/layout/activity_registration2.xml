@@ -9,18 +9,30 @@
     android:orientation="vertical"
     tools:context=".Registration2">
 
-    <RelativeLayout
-        android:layout_width="411dp"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="20dp"
-        android:layout_marginRight="20dp">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/purple_700"
+        android:layout_weight="1"><![CDATA[
+        //android:layout_marginLeft="20dp"
+        //android:layout_marginRight="20dp">
 
+        ]]>
+
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginTop="50dp"
+            android:background="@color/purple_700"
+            android:src="@drawable/iconname"></ImageView>
         <TextView
             android:id="@+id/textView1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="0dp"
-            android:layout_marginTop="0dp"
+            android:layout_marginTop="60dp"
             android:layout_marginRight="0dp"
             android:layout_marginBottom="0dp"
             android:background="@color/purple_700"
@@ -30,27 +42,25 @@
             android:textSize="35sp"
             android:textStyle="bold|italic" />
 
-    </RelativeLayout>
 
-    <ImageView
-        android:layout_width="match_parent"
-        android:layout_height="100dp"
-        android:background="@color/purple_700"
-        android:src="@drawable/iconname"></ImageView>
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="399dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="10dp"
+            android:background="@color/purple_700"
+            android:gravity="center_horizontal"
+            android:text="Register Here"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold" />
 
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="399dp"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="10dp"
-        android:layout_marginRight="10dp"
-        android:layout_marginBottom="10dp"
-        android:background="@color/purple_700"
-        android:gravity="center_horizontal"
-        android:text="Register Here"
-        android:textColor="@color/black"
-        android:textSize="20sp"
-        android:textStyle="bold" />
+    </LinearLayout>
+
+
 
     <EditText
         android:id="@+id/fullName"

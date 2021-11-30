@@ -102,6 +102,7 @@
                         android:layout_marginRight="130dp"
                         android:layout_marginBottom="3dp"
                         android:background="@color/colorprimarydark"
+                        android:onClick="CheckSafetyScoreCard"
                         android:text="Check Safety Score Card"
                         android:textColor="@color/black"
                         android:textSize="18sp" />

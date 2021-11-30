@@ -9,33 +9,37 @@
     tools:context=".Login2">
 
 
-    <RelativeLayout
+    <LinearLayout
+        android:orientation="vertical"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginRight="20dp"
-        android:layout_marginLeft="20dp">
+        android:layout_height="1dp"
+        android:background="@color/purple_700"
+        android:layout_weight="1"
+        android:layout_marginRight="0dp"
+        android:layout_marginLeft="0dp">
 
         <ImageView
-            android:layout_width="800dp"
-            android:layout_height="90dp"
-            android:src="@drawable/iconname">
-        </ImageView>
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_marginTop="50dp"
+            android:background="@color/purple_700"
+            android:src="@drawable/iconname"></ImageView>
 
         <TextView
             android:id="@+id/textView1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="10dp"
-            android:layout_marginTop="120dp"
+            android:layout_marginTop="60dp"
             android:layout_marginRight="10dp"
             android:layout_marginBottom="3dp"
             android:textColor="@color/black"
             android:textStyle="bold|italic"
             android:gravity="center_horizontal"
-            android:text="WELCOME"
+            android:text="LOG IN HERE"
             android:textSize="35sp" />
 
-    </RelativeLayout>
+    </LinearLayout>
 
     <TextView
         android:id="@+id/textView2"
@@ -44,7 +48,7 @@
         android:layout_marginLeft="10dp"
         android:layout_marginRight="10dp"
         android:layout_marginBottom="3dp"
-        android:textColor="@color/black"
+        android:textColor="@color/white"
         android:textStyle="bold"
         android:gravity="center_horizontal"
         android:text="Login Here"

@@ -17,11 +17,11 @@
         android:roundIcon="@drawable/background"
         android:supportsRtl="true"
         android:theme="@style/Theme.SAFETYAPP">
+<!--        <activity-->
+<!--            android:name=".MapsActivity"-->
+<!--            android:exported="false" />-->
         <activity
-            android:name=".MainActivity"
-            android:exported="false" />
-        <activity
-            android:name=".SplashActivity"
+            android:name=".MapsActivity"
             android:exported="false" />
         <activity
             android:name=".Login2"

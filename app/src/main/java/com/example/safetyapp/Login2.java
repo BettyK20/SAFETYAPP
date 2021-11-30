@@ -45,7 +45,7 @@ public class Login2 extends AppCompatActivity implements View.OnClickListener {
         mLoginBtn.setOnClickListener(new OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(getApplicationContext(), MainActivity.class));
+                startActivity(new Intent(getApplicationContext(), MainScreen.class));
 
 
                 String email = mEmail.getText().toString().trim();
